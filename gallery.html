@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - GameZone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Game<span>Zone</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="popular-games.html">Game Populer</a></li>
+        <li><a href="categories.html">Kategori</a></li>
+        <li><a href="community.html">Komunitas</a></li>
+        <li><a href="gallery.html" class="active">Galeri</a></li>
+        <li><a href="new-releases.html">Game Terbaru</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Galeri GameZone</h1>
+      <p>Koleksi screenshot dan artwork dari game-game terpopuler</p>
+    </div>
+  </section>
+
+  <section class="gallery-filters">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="screenshot">Screenshot</button>
+        <button class="filter-btn" data-filter="artwork">Artwork</button>
+        <button class="filter-btn" data-filter="wallpaper">Wallpaper</button>
+        <button class="filter-btn" data-filter="concept">Concept Art</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="screenshot">
+          <img src="/images/cyberpunk2077.jpg" alt="Cyberpunk 2077 Screenshot">
+          <div class="gallery-overlay">
+            <h4>Cyberpunk 2077</h4>
+            <p>Night City - Downtown</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <img src="/images/zelda.jpg" alt="Zelda Artwork">
+          <div class="gallery-overlay">
+            <h4>The Legend of Zelda</h4>
+            <p>Official Artwork - Link</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="wallpaper">
+          <img src="/images/eldenring.jpg" alt="Elden Ring Wallpaper">
+          <div class="gallery-overlay">
+            <h4>Elden Ring</h4>
+            <p>The Lands Between - 4K Wallpaper</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="screenshot">
+          <img src="/images/godofwar.jpg" alt="God of War Screenshot">
+          <div class="gallery-overlay">
+            <h4>God of War</h4>
+            <p>Kratos and Atreus</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="concept">
+          <img src="/images/gensinimpact.jpg" alt="Genshin Impact Concept">
+          <div class="gallery-overlay">
+            <h4>Genshin Impact</h4>
+            <p>Mondstadt Concept Art</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="wallpaper">
+          <img src="/images/minecraft.jpg" alt="Minecraft Wallpaper">
+          <div class="gallery-overlay">
+            <h4>Minecraft</h4>
+            <p>Creative World - HD Wallpaper</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="screenshot">
+          <img src="/images/valorant.jpg" alt="Valorant Screenshot">
+          <div class="gallery-overlay">
+            <h4>Valorant</h4>
+            <p>Bind Map - Tactical Gameplay</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <img src="/images/the-witcher3.jpeg" alt="The Witcher 3 Artwork">
+          <div class="gallery-overlay">
+            <h4>The Witcher 3</h4>
+            <p>Geralt of Rivia - Official Art</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="concept">
+          <img src="/images/rde2.jpg" alt="Red Dead Redemption 2 Concept">
+          <div class="gallery-overlay">
+            <h4>Red Dead Redemption 2</h4>
+            <p>Wild West Concept Art</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="wallpaper">
+          <img src="/images//gta5.jpg" alt="GTA V Wallpaper">
+          <div class="gallery-overlay">
+            <h4>Grand Theft Auto V</h4>
+            <p>Los Santos - 4K Wallpaper</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="screenshot">
+          <img src="/images/hogwarts.jpg" alt="Hogwarts Legacy Screenshot">
+          <div class="gallery-overlay">
+            <h4>Hogwarts Legacy</h4>
+            <p>Hogwarts Castle</p>
+            
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="artwork">
+          <img src="/images/spiderman-2.jpeg" alt="Spider-Man 2 Artwork">
+          <div class="gallery-overlay">
+            <h4>Marvel's Spider-Man 2</h4>
+            <p>Dual Spider-Men Artwork</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="/placeholder.svg" alt="">
+      <div class="lightbox-info">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Game<span>Zone</span></h2>
+          <p>Portal Game Terbaik di Indonesia</p>
+        </div>
+        <div class="footer-links">
+          <h3>Link Cepat</h3>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="popular-games.html">Game Populer</a></li>
+            <li><a href="categories.html">Kategori</a></li>
+            <li><a href="community.html">Komunitas</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="new-releases.html">Game Terbaru</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Berlangganan Newsletter</h3>
+          <form>
+            <input type="email" placeholder="Email Anda" required>
+            <button type="submit">Langganan</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Teguh Arifin</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
